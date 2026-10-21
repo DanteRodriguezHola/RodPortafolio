@@ -1,0 +1,53 @@
+:root {
+    --rainbow: linear-gradient(to right,#ff0000, #ffa500, #ffff00, #00ff00, #00a5ff, #8000ff);
+}
+
+@font-face {
+    font-family: Jersey25;
+    src: url(assets/fonts/Jersey25.ttf);
+}
+
+html {
+    background-image: url(images/backgrounds/earth.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #ffffff;
+    font-size: 1.4em;
+    font-family: monospace;
+    text-align: center;
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 100dvh;
+}
+
+#title {
+    background: var(--rainbow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 6em;
+    font-family: Jersey25;
+    letter-spacing: 0.03em;
+
+    display: inline;
+}
+
+a {
+    color: #ffffff;
+    
+    font-style: italic;
+    text-decoration: underline;
+}
